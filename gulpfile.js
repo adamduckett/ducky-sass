@@ -5,6 +5,7 @@
 // General
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
+var util = require('gulp-util');
 var rename = require('gulp-rename');
 var notify = require('gulp-notify');
 
@@ -43,7 +44,7 @@ gulp.task('sass', function() {
   }))
   .pipe(gulp.dest(paths.styles.output))
   .pipe(rename({ suffix: '.min' }))
-  .pipe(minify({compatibility: 'ie8'}))
+  .pipe(minify({ compatibility: 'ie8' }))
   .pipe(gulp.dest(paths.styles.output))
   .pipe(notify({ message: 'Styles task complete' }));
 });

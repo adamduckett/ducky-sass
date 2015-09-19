@@ -2,7 +2,6 @@
 
 echo "Installing clean Sass project, won't be a sec!"
 
-mv .git/modules .       && \
 rm -rf .git/            && \
 npm install             && \
 rm go

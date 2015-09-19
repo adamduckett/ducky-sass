@@ -4,7 +4,7 @@ echo "Installing clean Sass project, won't be a sec!"
 
 rm -rf .git/            && \
 npm install             && \
-rm go
+rm go LICENSE README.md
 
 echo "...Aaaand done! Have fun with your new Sass project :)"
 

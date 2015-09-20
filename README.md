@@ -1,15 +1,35 @@
 # Ducky Sass
 This is a sample Sass project architecture using the [Atomic design](http://bradfrost.com/blog/post/atomic-web-design/) methodology.
 
-At the moment, apart from [`normalize.css`](http://necolas.github.io/normalize.css/) resets, there are no styles included with Ducky Sass; only a directory structure. However, this may change in the future if I feel including example Sass would be beneficial.
+Apart from [`normalize.css`](http://necolas.github.io/normalize.css/) resets, Ducky Sass contains no styles; only a project directory structure.
 
-Each folder contains its own `README.md` file explaining its purpose.
+It does, however, come bundled with a `gulpfile.js` file which containing Gulp tasks to both compile our Sass and watch for changes.
 
-What Ducky Sass does include, though, are basic `package.json` and `gulpfile.js` files which after running `npm install` in our directory will get us fully
-setup with a fully automated watch task which watches for changes and compiles
-our Sass.
+I've not included things like `index.html` or `img/` (which I appreciate are common project files and directories) because I just want to focus on the Sass/CSS side of things with Ducky Sass.
+
+## Getting Started
+
+Installing Ducky Sass via the command line is as simple as:
+
+    $ git clone https://github.com/adamduckett/ducky-sass.git your-project-folder
+    $ cd your-project-folder
+    $ ./start
+
+Running the `start` file removes the `.git` folder before installing the dependencies needed for our Gulp tasks (to compile our Sass) and finally deleting itself. Self-destruction, yo!
 
 ## Structure
+
+The `sass/` directory's structure is based on Brad Frost's [Atomic design](http://bradfrost.com/blog/post/atomic-web-design/) methodology.
+
+    sass/
+        atoms/
+        molecules/
+        organisms/
+        pages/
+        shame/
+        utils/
+        vendor/
+        main.scss
 
 ### Molecules
 The `molecules/` folder contains styles for more tangible components constructed by combining multiple atoms. Molecules are the backbone of our design system and could include things like a search form built from a label, input and button.

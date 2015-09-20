@@ -2,7 +2,7 @@
   "name": "ducky-sass",
   "description": "This is a sample Sass project architecture using the Atomic design methodology",
   "version": "1.0.0",
-  "main": "./css",
+  "main": "./sass",
   "author": {
     "name": "Adam Duckett",
     "url": "https://adamduckett.io"

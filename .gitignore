@@ -3,6 +3,9 @@
 *.css.map
 *.scssc
 
+# CSS
+*.css
+
 # Node / Grunt
 node_modules
 

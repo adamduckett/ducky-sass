@@ -21,7 +21,7 @@ var minify = require('gulp-minify-css');
 
 var paths = {
   styles: {
-    input: 'css/**/*.{scss,sass}',
+    input: 'sass/**/*.{scss,sass}',
     output: 'css/'
   }
 };

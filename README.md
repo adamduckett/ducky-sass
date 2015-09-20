@@ -17,6 +17,7 @@ Installing Ducky Sass via the command line is as simple as:
 
 Running the `start` file removes the `.git` folder before installing the dependencies needed for our Gulp tasks (to compile our Sass) and finally deleting itself. Self-destruction, yo!
 
+
 ## Structure
 
 The `sass/` directory's structure is based on Brad Frost's [Atomic design](http://bradfrost.com/blog/post/atomic-web-design/) methodology.
@@ -48,3 +49,10 @@ The `atoms/` folder contains any high-level unclassed HTML element styles for ou
 
 ### Vendor
 The `vendor/` folder contains external vendor styles your project relies on like Nicolas Gallagher's [`normalize.css`](http://necolas.github.io/normalize.css/).
+
+
+## License
+
+Copyright 2015 Adam Duckett
+
+Licensed under the Apache License, Version 2.0.

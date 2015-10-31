@@ -13,9 +13,12 @@ Installing Ducky Sass via the command line is as simple as:
 
     $ git clone https://github.com/adamduckett/ducky-sass.git your-project-folder
     $ cd your-project-folder
-    $ ./start
+    $ rm -rf .git/
+    $ git init
+    $ npm install
+    $ gulp
 
-Running the `start` file removes the `.git` folder before installing the dependencies needed for our Gulp tasks (to compile our Sass) and finally deleting itself. Self-destruction, yo!
+The above removes the `.git` folder before creating a new instance of Git, installing our Gulp dependencies (for compiling our Sass) and finally running our default Gulp task.
 
 
 ## Structure

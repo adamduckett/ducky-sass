@@ -41,9 +41,7 @@ var onError = function (err) {
 gulp.task('sass', function() {
   return gulp.src(paths.styles.input)
   .pipe(plumber({
-    gutil.beep();
-    console.log(err);
-    this.emit('end');
+    errorHandler: onError
   }))
   .pipe(sass({
     outputStyle: 'expanded',

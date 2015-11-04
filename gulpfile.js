@@ -5,7 +5,7 @@
 // General
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
-var util = require('gulp-util');
+var gutil = require('gulp-util');
 var rename = require('gulp-rename');
 var notify = require('gulp-notify');
 
@@ -30,11 +30,21 @@ var paths = {
 /**
  * Gulp Tasks
  */
+// Error Handling
+var onError = function (err) {
+  gutil.beep();
+  console.log(err);
+  this.emit('end');
+};
 
 // Process, lint, prefix & minify Sass files
 gulp.task('sass', function() {
   return gulp.src(paths.styles.input)
-  .pipe(plumber())
+  .pipe(plumber({
+    gutil.beep();
+    console.log(err);
+    this.emit('end');
+  }))
   .pipe(sass({
     outputStyle: 'expanded',
     sourceComments: true
